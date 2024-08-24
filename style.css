@@ -24,30 +24,28 @@ body {
 .ball {
   top: 0;
   left: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   position: fixed;
   width: 100svw;
   height: 100svh;
 }
 
-.ball::before,
-.ball::after {
-  position: absolute;
-  content: "";
+.ball span,
+.ball span {
+  position: relative;
   width: 22em;
   height: 22em;
-  top: 25%;
-  left: 20%;
+  top: -8rem;
   border-radius: 50%;
   background-image: var(--gradient-color);
   animation: rotate 10s infinite linear, upDown 5s infinite ease-in-out;
 }
-.ball::after {
-  left: auto;
-  right: 20%;
+.ball span:nth-child(2) {
   top: auto;
-  bottom: 25%;
+  bottom: -8rem;
   animation-delay: 2.5s;
 }
 
