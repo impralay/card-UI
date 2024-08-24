@@ -13,23 +13,52 @@
 
 body {
   position: relative;
-  height: 100vh;
+  width: 100svw;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
   /* overflow: hidden; */
 }
+.ball {
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  width: 100svw;
+  height: 100svh;
+}
 
-body::before,
-body::after {
+.ball::before,
+.ball::after {
   position: absolute;
   content: "";
   width: 22em;
   height: 22em;
+  top: 25%;
+  left: 20%;
   border-radius: 50%;
   background-image: var(--gradient-color);
-  animation: rotate 10s infinite linear;
+  animation: rotate 10s infinite linear, upDown 5s infinite ease-in-out;
+}
+.ball::after {
+  left: auto;
+  right: 20%;
+  top: auto;
+  bottom: 25%;
+  animation-delay: 2.5s;
+}
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
 }
 
 body::before {
