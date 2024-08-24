@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid green; */
+}
+
+:root {
+  --color: #ffffffb9;
+  --bg-color: #06092d;
+  --gradient-color: linear-gradient(-20deg, #ae00ff 0%, #00d0ff 100%);
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  /* overflow: hidden; */
+}
+
+body::before,
+body::after {
+  position: absolute;
+  content: "";
+  width: 22em;
+  height: 22em;
+  border-radius: 50%;
+  background-image: var(--gradient-color);
+  animation: rotate 10s infinite linear;
+}
+
+body::before {
+  transform: translate(-200px, -100px);
+}
+
+body::after {
+  transform: translate(200px, 100px);
+}
+
+.card {
+  position: relative;
+  width: 30em;
+  height: 18em;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  border-radius: 25px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card .visa-logo {
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  font-size: 100px;
+}
+.platinum {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  color: #0000ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card .wifi {
+  position: absolute;
+  top: 100px;
+  width: 40px;
+  right: 20px;
+  font-size: 40px;
+  transform: rotate(90deg);
+  color: #000;
+}
+
+.card .bank-name {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 45px;
+}
+.card .chip {
+  position: absolute;
+  width: 60px;
+  left: 60px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  top: 95px;
+}
+img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.card .indi {
+  position: absolute;
+  top: 72px;
+  letter-spacing: 1px;
+  font-size: 10px;
+  color: #000;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 20px;
+}
+.card .valid-thru {
+  position: absolute;
+  left: 20px;
+  bottom: 55px;
+  font-size: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card .card-number {
+  position: absolute;
+  bottom: 105px;
+  left: 60px;
+  font-size: 27px;
+  font-weight: 600;
+}
+.card .expiry-date {
+  position: absolute;
+  left: 80px;
+  bottom: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card .card-holder-name {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.card .color-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 4px;
+  font-weight: 900;
+  font-weight: 100;
+  text-shadow: 0 0 1px #000000;
+  color: #0011ff;
+}
+.card .logo {
+  position: relative;
+  top: 10px;
+  width: 170px;
+  height: 150px;
+  z-index: -1;
+}
+.logo p {
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(to right, #fff, #777);
+}
+.logo p.b {
+  top: 46.5%;
+  left: -69px;
+  width: 150px;
+  transform: rotate(90deg);
+}
+.logo p.c {
+  bottom: 0;
+  transform: rotate(0);
+  background: linear-gradient(to right, #777, #333);
+}
+.logo p.d {
+  top: 46.5%;
+  right: -69px;
+  width: 150px;
+  transform: rotate(90deg);
+  background: linear-gradient(to right, #777, #333);
+}
+.logo span {
+  position: absolute;
+  width: 70%;
+  left: 25px;
+  top: 30px;
+  height: 24px;
+  background: linear-gradient(to right, #fff, #626262);
+}
+.logo span.b {
+  width: 50%;
+  left: 25px;
+  top: 67px;
+  background: linear-gradient(to right, #e1e1e1, #585858);
+}
+.logo span.c {
+  width: 20%;
+  left: 25px;
+  top: 102px;
+  background: linear-gradient(to right, #b5b5b5, #4c4c4c);
+}

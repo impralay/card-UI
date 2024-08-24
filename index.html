@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./icons/css/icon.css" />
+    <title>Credit Card</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-bank-info">
+        <div class="bank-name"><img src="./images/IDFC.png" alt="" /></div>
+        <div class="indi"><span>INDIVIDUAL</span></div>
+      </div>
+
+      <div class="chip-img">
+        <div class="chip"><img src="./images/chip.png" alt="" /></div>
+        <div class="wifi"><i class="sbi-signal1"></i></div>
+      </div>
+
+      <div class="card-no">
+        <div class="card-number color-text">4011 3841 0472 5343</div>
+      </div>
+
+      <div class="logo">
+        <p class="a"></p>
+        <p class="b"></p>
+        <p class="c"></p>
+        <p class="d"></p>
+        <span class="a"></span>
+        <span class="b"></span>
+        <span class="c"></span>
+      </div>
+
+      <div class="card-expiration">
+        <div class="expiry-date color-text">06/29</div>
+        <div class="card-holder-name color-text">Pralay Pal</div>
+        <div class="valid-thru">valid thru</div>
+        <div class="visa-logo"><i class="sbi-visa"></i></div>
+        <div class="platinum">Platinum</div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 20,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+
+  </body>
+</html>
