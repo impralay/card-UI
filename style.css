@@ -19,8 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
-  /* overflow: hidden; */
 }
+
 .ball {
   top: 0;
   left: 0;
@@ -43,6 +43,7 @@ body {
   background-image: var(--gradient-color);
   animation: rotate 10s infinite linear, upDown 5s infinite ease-in-out;
 }
+
 .ball span:nth-child(2) {
   top: auto;
   bottom: -8rem;
@@ -90,6 +91,7 @@ body::after {
   right: 15px;
   font-size: 100px;
 }
+
 .platinum {
   position: absolute;
   bottom: 10px;
@@ -97,6 +99,7 @@ body::after {
   color: #0000ff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .card .wifi {
   position: absolute;
   top: 100px;
@@ -113,6 +116,7 @@ body::after {
   top: 20px;
   height: 45px;
 }
+
 .card .chip {
   position: absolute;
   width: 60px;
@@ -123,11 +127,13 @@ body::after {
   background: #fff;
   top: 95px;
 }
+
 img {
   position: relative;
   height: 100%;
   width: 100%;
 }
+
 .card .indi {
   position: absolute;
   top: 72px;
@@ -138,6 +144,7 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   right: 20px;
 }
+
 .card .valid-thru {
   position: absolute;
   left: 20px;
@@ -148,6 +155,7 @@ img {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .card .card-number {
   position: absolute;
   bottom: 105px;
@@ -155,6 +163,7 @@ img {
   font-size: 27px;
   font-weight: 600;
 }
+
 .card .expiry-date {
   position: absolute;
   left: 80px;
@@ -162,6 +171,7 @@ img {
   font-size: 18px;
   font-weight: 600;
 }
+
 .card .card-holder-name {
   position: absolute;
   left: 30px;
@@ -170,6 +180,7 @@ img {
   text-transform: uppercase;
   font-weight: 600;
 }
+
 .card .color-text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -192,7 +203,6 @@ img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .card .logo {
   position: relative;
   top: 10px;
@@ -200,24 +210,28 @@ img {
   height: 150px;
   z-index: -1;
 }
+
 .logo p {
   position: absolute;
   width: 100%;
   height: 12px;
   background: linear-gradient(to right, #fff, #777);
 }
+
 .logo p.b {
   top: 46.5%;
   left: -69.2px;
   width: 150px;
   transform: rotate(90deg);
 }
+
 .logo p.c {
   bottom: 0;
   top: 140px;
   transform: rotate(0);
   background: linear-gradient(to right, #777, #333);
 }
+
 .logo p.d {
   top: 46.5%;
   right: -69px;
@@ -225,6 +239,7 @@ img {
   transform: rotate(90deg);
   background: linear-gradient(to right, #777, #333);
 }
+
 .logo span {
   position: absolute;
   width: 70%;
@@ -233,12 +248,14 @@ img {
   height: 24px;
   background: linear-gradient(to right, #fff, #626262);
 }
+
 .logo span.b {
   width: 50%;
   left: 25px;
   top: 67px;
   background: linear-gradient(to right, #e1e1e1, #585858);
 }
+
 .logo span.c {
   width: 20%;
   left: 25px;
